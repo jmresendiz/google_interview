@@ -1,6 +1,7 @@
 # Guía de Entrevista Técnica de Google
 
 ## Logística
+
 - **Idioma**: Inglés
 - **Plataforma**: Google Docs (sin IDE ni compilador)
 - **Setup**: Cámara, micrófono, internet estable
@@ -9,12 +10,14 @@
 ## Expectativas Clave
 
 ### Comunicación
+
 - ✅ **Pensar en voz alta** - verbalizar proceso
 - ✅ **Hacer preguntas clarificadoras** - los problemas son vagos intencionalmente
 - ✅ **Declarar suposiciones** - confirmar con entrevistador
 - ✅ **Escuchar pistas** - el entrevistador puede guiarte
 
 ### Resolución de Problemas
+
 1. **Definir problema** - entender antes de codificar
 2. **Describir enfoque** - explicar plan primero
 3. **Evitar fuerza bruta** - optimizar
@@ -25,21 +28,26 @@
 ## Tópicos Técnicos
 
 ### Fundamentales
+
 - **Big O**: Tiempo y espacio
 - **Sorting**: QuickSort, MergeSort (O(n log n))
 - **Hash Tables**: Implementación, colisiones
 
 ### Estructuras de Datos
+
 **Trees**:
+
 - Binary Trees, BST, Balanced trees
 - Traversals: inorder, preorder, postorder, level-order
 
 **Graphs**:
+
 - Representaciones: adjacency list, matrix
 - BFS, DFS (dominar implementaciones)
 - Dijkstra, A* (opcional)
 
 ### Otros
+
 - **Recursion**: Base case, recursión
 - **Concurrency**: Processes, threads, locks, deadlock
 - **Discrete Math**: Combinatorics, probability
@@ -48,16 +56,19 @@
 ## Recursos
 
 ### Google
+
 - [Tech Dev Guide](https://techdevguide.withgoogle.com/)
 - [Google Warmup](https://grow.google/certificates/interview-warmup/)
 - [Interview Tips](https://www.google.com/about/careers/applications/interview-tips/)
 
 ### Práctica
+
 - [LeetCode](https://leetcode.com/) - Problemas de Google
 - [NeetCode Roadmap](https://neetcode.io/roadmap/)
 - [HackerRank](https://www.hackerrank.com/)
 
 ### Mock Interview
+
 **Email**: gustavohar@google.com
 **Tipo**: Coding (Tech Only)
 **Formato**: Google Meet
@@ -73,6 +84,7 @@
 7. Dormir bien antes
 
 ## Checklist Pre-Entrevista
+
 - [ ] Cámara/micrófono OK
 - [ ] Internet estable
 - [ ] Google Docs practicado

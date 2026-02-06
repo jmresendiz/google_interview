@@ -5,7 +5,10 @@
       "label": "🔧 Setup Python Environment",
       "type": "process",
       "command": "bash",
-      "args": ["-lc", "./scripts/setup_env.sh"],
+      "args": [
+        "-lc",
+        "./scripts/setup_env.sh"
+      ],
       "options": {
         "cwd": "${workspaceFolder}",
         "env": {
@@ -31,7 +34,9 @@
       "label": "📊 Run Tests with Coverage",
       "type": "process",
       "command": "make",
-      "args": ["test-cov"],
+      "args": [
+        "test-cov"
+      ],
       "options": {
         "cwd": "${workspaceFolder}"
       },
@@ -56,7 +61,9 @@
       "label": "🐳 Build Docker Image",
       "type": "process",
       "command": "make",
-      "args": ["docker-build"],
+      "args": [
+        "docker-build"
+      ],
       "options": {
         "cwd": "${workspaceFolder}"
       },
@@ -81,7 +88,9 @@
       "label": "🐳 Docker Up (compose)",
       "type": "process",
       "command": "make",
-      "args": ["docker-up"],
+      "args": [
+        "docker-up"
+      ],
       "options": {
         "cwd": "${workspaceFolder}"
       },
