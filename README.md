@@ -1,38 +1,89 @@
-# mypkg
+# Google Technical Interview Preparation
 
-A package for doing great things!
+Repositorio para preparación de entrevista técnica de Google.
 
-## Installation
+## 📅 Timeline
+**Tiempo disponible:** 12 días
+**Inicio:** 6 de Febrero, 2026
+**Entrevista:** ~18 de Febrero, 2026
 
-This project automatically sets up the Python environment when opened in VS Code.
-For other installation methods, see the [installation guide](docs/installation.md).
+## 📚 Recursos Principales
 
-## Usage
+### Libros
+1. **Cracking the Coding Interview** - Capítulos más relevantes
+2. **Elements of Programming Interviews in Python**
+3. **Fluent Python**
 
-- For a complete usage guide, see [`docs/USAGE.md`](docs/USAGE.md).
+### Plataformas de Práctica
+- [LeetCode](https://leetcode.com/)
+- [NeetCode Roadmap](https://neetcode.io/roadmap)
+- [Google Warmup](https://grow.google/certificates/interview-warmup/)
+- [HackerRank](https://www.hackerrank.com/)
+- [Google Tech Dev Guide](https://techdevguide.withgoogle.com/)
 
-Quick summary:
+### Recursos de Google
+- [Google Interview Prep Guide](https://www.google.com/about/careers/applications/interview-tips/)
+- [How to prepare for Google's technical interview (video)](https://www.youtube.com/watch?v=ko-KkSmp-Lk)
 
-- Installation and setup: see [`docs/installation.md`](docs/installation.md)
-- Common commands: use the `Makefile` (`make setup`, `make deps`, `make test`)
-- Repository usage guide: [`docs/USAGE.md`](docs/USAGE.md)
+## 📖 Documentación
 
-### Docker
+- **[Plan de Estudio](docs/study_plan.md)** - Plan detallado de 12 días
+- **[Checklist de Tópicos](docs/checklist.md)** - Seguimiento de progreso
+- **[Guía de Entrevista](docs/google_technical_interview.md)** - Información oficial de Google
 
-- Build the base image (uses `.build/Dockerfile`):
+## 🗂️ Estructura del Repositorio
 
-## Contributing
+```
+.
+├── docs/                       # Documentación y guías
+├── practice/                   # Código de práctica
+│   ├── algorithms/            # Implementaciones de algoritmos
+│   ├── data_structures/       # Estructuras de datos
+│   └── problems/              # Soluciones a problemas
+└── resources/                 # Notas y recursos adicionales
+    └── notes/                 # Notas de estudio
+```
 
-Interested in contributing? Check out the contributing guidelines. Please note that
-this project is released with a Code of Conduct. By contributing to this project,
-you agree to abide by its terms.
+## 🎯 Tópicos Clave
 
-## License
+1. **Algorithm Complexity** - Big O notation
+2. **Sorting** - QuickSort, MergeSort
+3. **Hash Tables** - Implementación y uso
+4. **Trees** - Binary trees, BST, traversals
+5. **Graphs** - BFS, DFS, Dijkstra
+6. **Data Structures** - Arrays, LinkedLists, Stacks, Queues
+7. **Recursion** - Problemas recursivos
+8. **Dynamic Programming** - Memoization, tabulation
+9. **Discrete Math** - Combinatorics, probability
 
-`mypkg` was created by Jose Miguel Resendiz <josemiguel@ztocker.com>.
-It is licensed under the terms of the MIT license.
+## 🚀 Inicio Rápido
 
-## Credits
+```bash
+# Instalar dependencias
+poetry install
 
-`mypkg` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/)
-and the `py-pkgs-cookiecutter` [template](https://github.com/ztocker/py-pkgs-cookiecutter).
+# Activar ambiente virtual (si no se activa automáticamente)
+poetry shell
+
+# Ejecutar tests de práctica
+pytest practice/
+
+# Usar IPython para experimentar
+ipython
+```
+
+## 📝 Notas Importantes
+
+- Todas las entrevistas son en **inglés**
+- Se usa **Google Docs** para codificar (sin IDE ni compilador)
+- **Pensar en voz alta** - verbalizar el proceso de pensamiento
+- **Hacer preguntas clarificadoras** antes de empezar
+- **Probar el código manualmente** con ejemplos
+- Buscar soluciones **eficientes**, evitar fuerza bruta
+
+## 🎓 Mock Interviews
+
+Para practicar con un Googler:
+- Email: gustavohar@google.com
+- Tipo: "Coding (Tech Only)"
+- Duración: ~45-60 minutos

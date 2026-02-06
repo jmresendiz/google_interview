@@ -1,42 +1,21 @@
 [tool.poetry]
-name = "mypkg"
+name = "google-interview-prep"
 version = "0.1.0"
-description = "A package for doing great things!"
-authors = ["google_interview"]
+description = "Google Technical Interview Preparation"
+authors = ["Jose Miguel Resendiz <josemiguel@ztocker.com>"]
 license = "MIT"
-packages = [
-    { include = "mypkg", from = "src" },
-]
 
 [tool.poetry.dependencies]
 python = "3.12.8"
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^9.0.2"
+pytest-cov = "^7.0.0"
+ipython = "^9.10.0"
+ipdb = "^0.13.13"
+ruff = "^0.15.0"
+black = "^26.1.0"
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-####################
-# Semantic-release #
-####################
-
-[tool.semantic_release]
-version_toml = [
-    "pyproject.toml:tool.poetry.version",
-]
-branch = "main"
-changelog_file = "CHANGELOG.md"
-build_command = "pip install poetry"
-
-[tool.semantic_release.branches.main]
-match = "main"
-prerelease = false
-
-# [tool.semantic_release.branches.develop]
-# match = "develop"
-# prerelease = true
-# prerelease_token = "dev"
-
-# [tool.semantic_release.branches.staging]
-# match = "staging"
-# prerelease = true
-# prerelease_token = "rc"
