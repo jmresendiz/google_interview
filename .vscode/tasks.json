@@ -1,0 +1,106 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "🔧 Setup Python Environment",
+      "type": "process",
+      "command": "bash",
+      "args": ["-lc", "./scripts/setup_env.sh"],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PATH": "${env:PATH}:/usr/local/bin:/opt/homebrew/bin"
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "detail": "Sets up the Python development environment on demand",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "new",
+        "showReuseMessage": false,
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "📊 Run Tests with Coverage",
+      "type": "process",
+      "command": "make",
+      "args": ["test-cov"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "detail": "Runs unit tests with comprehensive coverage report (terminal + HTML + XML)",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "new",
+        "showReuseMessage": false,
+        "clear": true,
+        "close": false,
+        "group": "test"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "🐳 Build Docker Image",
+      "type": "process",
+      "command": "make",
+      "args": ["docker-build"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "detail": "Builds the project Docker image using the build script",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "new",
+        "showReuseMessage": false,
+        "clear": true,
+        "close": false,
+        "group": "docker"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "🐳 Docker Up (compose)",
+      "type": "process",
+      "command": "make",
+      "args": ["docker-up"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "detail": "Build and start docker-compose stack via Makefile (uses .build/docker-compose.yml)",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "new",
+        "showReuseMessage": false,
+        "clear": true,
+        "close": false,
+        "group": "docker"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "python.defaultInterpreterPath": "${env:HOME}/.pyenv/versions/${workspaceFolderBasename}/bin/python",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.terminal.activateEnvironment": false,
+  "python.venvPath": "${env:HOME}/.pyenv/versions",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnSave": false
+  },
+  "terminal.integrated.profiles.osx": {
+    "mypkg": {
+      "path": "zsh",
+      "args": ["-l", "-c", "cd '${workspaceFolder}'; eval \"$(pyenv init -)\"; ./scripts/setup_env.sh; pyenv shell mypkg; exec zsh -l"]
+    }
+  },
+  "terminal.integrated.defaultProfile.osx": "mypkg",
+  "terminal.integrated.profiles.linux": {
+    "mypkg": {
+      "path": "zsh",
+      "args": ["-l", "-c", "cd '${workspaceFolder}'; eval \"$(pyenv init -)\"; ./scripts/setup_env.sh; pyenv shell mypkg; exec zsh -l"]
+    }
+  },
+  "terminal.integrated.defaultProfile.linux": "mypkg",
+  "task.allowAutomaticTasks": "on",
+  "python.testing.pytestArgs": ["tests"],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
+}

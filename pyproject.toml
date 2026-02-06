@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "mypkg"
+version = "0.1.0"
+description = "A package for doing great things!"
+authors = ["google_interview"]
+license = "MIT"
+packages = [
+    { include = "mypkg", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "3.12.8"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+####################
+# Semantic-release #
+####################
+
+[tool.semantic_release]
+version_toml = [
+    "pyproject.toml:tool.poetry.version",
+]
+branch = "main"
+changelog_file = "CHANGELOG.md"
+build_command = "pip install poetry"
+
+[tool.semantic_release.branches.main]
+match = "main"
+prerelease = false
+
+# [tool.semantic_release.branches.develop]
+# match = "develop"
+# prerelease = true
+# prerelease_token = "dev"
+
+# [tool.semantic_release.branches.staging]
+# match = "staging"
+# prerelease = true
+# prerelease_token = "rc"
